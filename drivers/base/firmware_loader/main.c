@@ -292,6 +292,7 @@ static const char * const fw_path[] = {
     "/data/vendor/firmware/update/",
     //#endif /* OPLUS_FEATURE_BT_FW_SAU_MTK */
 	fw_path_para,
+	"/odm/etc/wifi/",
 	"/lib/firmware/updates/" UTS_RELEASE,
 	"/lib/firmware/updates",
 	"/lib/firmware/" UTS_RELEASE,
