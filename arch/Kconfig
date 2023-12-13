@@ -558,11 +558,7 @@ config CFI_CLANG_SHADOW
 
 config ARCH_SUPPORTS_SHADOW_CALL_STACK
 	bool
-<<<<<<< HEAD
-        default y
-=======
 	default y
->>>>>>> ff8c899c3e82... kernel: Set Shadow Call Stack as default.
 	help
 	  An architecture should select this if it supports Clang's Shadow
 	  Call Stack, has asm/scs.h, and implements runtime support for shadow

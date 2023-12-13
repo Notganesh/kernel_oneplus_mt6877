@@ -116,7 +116,8 @@ $(foreach myfeature,$(ALLOWED_MCROS),\
 
 
 # BSP team can do customzation by referring the feature variables
-
+export REMOVE_OPLUS_ROOT_CHECK=yes
+ifneq ($(REMOVE_OPLUS_ROOT_CHECK),yes)
 ifeq ($(OPLUS_FEATURE_SECURE_GUARD),yes)
 export CONFIG_OPLUS_SECURE_GUARD=y
 KBUILD_CFLAGS += -DCONFIG_OPLUS_SECURE_GUARD
@@ -159,4 +160,5 @@ endif
 
 ifeq ($(OPLUS_FEATURE_SECURE_KEYINTERFACESGUARD),yes)
 KBUILD_CFLAGS += -DOPLUS_DISALLOW_KEY_INTERFACES
+endif
 endif
