@@ -133,4 +133,10 @@ all.config
 # Kdevelop4
 *.kdev4
 
-/rebase.sh/
+# Kernel building
+/out/
+/clang/
+/los-4.9-32/
+/los-4.9-64/
+/AnyKernel/
+/modules/
