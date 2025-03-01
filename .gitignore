@@ -140,3 +140,5 @@ all.config
 /los-4.9-64/
 /AnyKernel/
 /modules/
+/gcc32/
+/gcc64/
